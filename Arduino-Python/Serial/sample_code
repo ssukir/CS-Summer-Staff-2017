@@ -1,0 +1,37 @@
+import serial
+
+ARDUINO =  "COM4"
+
+def main():
+  ser =  serial.Serial(ARDUINO, timeout=1)
+  prevVal = None
+08
+  while 1:
+09
+      # Read the serial value
+10
+      ser.flushInput()
+11
+      serialValue = ser.readline().strip()
+12
+      # Catch any bad serial data:
+13
+      try:
+14
+          if serialValue != prevVal:
+15
+              # Print the value if it differs from the prevVal:
+16
+              print "New Val: ", serialValue
+17
+              prevVal = serialValue
+18
+      except ValueError:
+19
+          pass
+20
+
+21
+if __name__ == '__main__':
+22
+  main()
