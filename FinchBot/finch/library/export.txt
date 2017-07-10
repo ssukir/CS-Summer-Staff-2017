@@ -1,3 +1,0 @@
-# export everything for applications and applets
-application=finch.jar,jnaerator-0.9.5.jar,libhidapi.dylib
-applet=finch.jar,jnaerator-0.9.5.jar,libhidapi.dylib
