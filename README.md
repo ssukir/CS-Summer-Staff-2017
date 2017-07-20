@@ -18,3 +18,6 @@ Includes:
   * Finchbot files (for Betty!)
     * Python and JavaScript
     * Arrow key scripts
+ * Website 1 Files
+    * HTML/CSS/JS
+    * Encipher/Decipher in JS and Python
