@@ -1,0 +1,141 @@
+* {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: blue;
+}
+
+img {
+  border-radius: 100%;
+}
+
+p {
+  font-size: 18px;
+  line-height: 0.75em;
+}
+
+body {
+  background-color: HoneyDew;
+  padding: 40px, 10px;
+}
+
+h1 {
+  font-size: 48px;
+  font-style: bold;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.header {
+  /* background-image: ;
+  background-position: */
+}
+
+.header-text {
+  text-align: center;
+  line-height: 0.75em;
+}
+
+.project-list {
+  padding-left: 25px;
+}
+
+p.project-list {
+
+}
+
+.caption {
+  font-style: italic;
+  position: relative;
+  font-size: 12px;
+  line-height: 10px;
+}
+
+.image {
+  line-height: 0.5em;
+  /* padding-left: 25px; */
+  text-align: center;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+}
+
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.menu li {
+    margin: 0px;
+}
+
+.menu a {
+    transition: all linear 0.15s;
+    color: Black;
+    text-decoration: none;
+}
+
+.menu li:hover > a, .menu .current-item > a {
+    color: Turquoise;
+}
+
+/*----- Top Level -----*/
+.menu > ul > li {
+    float: center;
+    display: inline-block;
+    position: relative;
+    font-size: 19px;
+}
+
+.menu > ul > li > a {
+    padding: 10px 40px;
+    display: inline-block;
+}
+
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background: HoneyDew;
+}
+
+/*----- Bottom Level -----*/
+.sub-menu {
+    width: 100%;
+    padding: 5px 0px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+    /*box-shadow: 0px 2px 3px rgba(0,0,0,0.2);*/
+    /*background:#2e2728;*/
+}
+
+.menu li:hover .sub-menu {
+    z-index: 1;
+    opacity: 1;
+}
+
+.sub-menu li {
+    display: block;
+    font-size: 16px;
+}
+
+.sub-menu li a {
+    padding: 10px 30px;
+    display: block;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+    color: Turquoise;
+}
